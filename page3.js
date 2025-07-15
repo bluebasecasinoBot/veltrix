@@ -198,7 +198,7 @@ __SYD.p3_tab = ({title = '' , content = '' , img = "main"}) =>{
                             __c(
                                 "div",
                                 {
-                                    style:`width:100%;height:100%;background-color:green;background-image:url(./assets/${img});transition:all linear .3s;`,
+                                    style:`width:100%;height:100%;background-color:rgba(255,255,255,.2);background-image:url(./assets/${img});transition:all linear .3s;`,
                                     class:`img_holder_${img.split(".").join("")}`
                                 },[],{genericStyle:["bg_cover"]}
                             ),
