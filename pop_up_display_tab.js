@@ -186,7 +186,7 @@ __SYD.main_pop_top_cont = () =>{
                             style:"display:flex;width:100%;height:fit-content;column-gap:20px;flex-wrap:wrap;justify-content:center;"
                         },
                         [
-                            __SYD.main_pop_tab__main_buttonClick("ai"),
+                            // __SYD.main_pop_tab__main_buttonClick("ai"),
                             __SYD.main_pop_tab__main_buttonClick("bot"),
                         ]
                     )
