@@ -148,10 +148,10 @@ __SYD.utils_dropDown = () =>{
                 [
                     // __SYD.desktopNav_textContent_text({val:"Ai-agent" , ref:"#" , tic:300}),
                     // __SYD.desktopNav_textContent_text({val:"Trading Bot" , ref:"#" , tic:300}),
-                    __c(
-                        "p",
-                        {},[__c("a",{class:"subtle-hover" , style:"text-decoration:none;font-weight:300;" , href:`/agent/`},["Ai-agent"])]
-                    ),
+                    // __c(
+                    //     "p",
+                    //     {},[__c("a",{class:"subtle-hover" , style:"text-decoration:none;font-weight:300;" , href:`/agent/`},["Ai-agent"])]
+                    // ),
                     __c(
                         "p",
                         {},[__c("a",{class:"subtle-hover" , style:"text-decoration:none;font-weight:300;" , href:"https://t.me/dummy_test_bot_404_bot"},["Trading Bot"])]
@@ -220,7 +220,7 @@ __SYD.desktopNav_button = () =>{
         {
             events:{
                 onclick:e =>{
-                    location.href = '/agent/'
+                    location.href = 'https://t.me/dummy_test_bot_404_bot'
                 }
             }
         }
