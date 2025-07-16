@@ -110,7 +110,7 @@ __SYD.agent_use_chat_main = () =>{
                                         //update agent last message
                                     }
 
-                                    __v['chatScroll'].scrollIntoView();
+                                    __v['chatScroll_el'].scrollIntoView();
                                 } , 50)
         
                                 __u("agent_use_chat_main" , {type:"a" , value:state3})
@@ -155,7 +155,7 @@ __SYD.chatArea__agent = () =>{
             ...get_render_chat(),
             __c(
                 "span",
-                {},[],{type:"chatScroll"}
+                {style:"position:absolute;bottom:0;left:50%;transform:translateX(-50%);"},[],{type:"chatScroll_el"}
             ),
             __c(
                 "span",
@@ -212,7 +212,7 @@ __SYD.messageTab = () =>{
 
                                     __p(['userAgentAi__sections_main' , 'updateUserMessage'])(__v['chat_msg_tab'].value);
     
-                                    __v['chatScroll'].scrollIntoView();
+                                    __v['chatScroll_el'].scrollIntoView();
     
                                     __v['chat_msg_tab'].value = "";
     

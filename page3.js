@@ -1,4 +1,4 @@
-import { __c, __p, __sC, __SYD, SYD_VAR } from "./sydneyDom_v3.js";
+import { __c, __g, __p, __sC, __SYD, __u, SYD_VAR } from "./sydneyDom_v3.js";
 
 __SYD.p3 = () =>{
     return __c(
@@ -130,45 +130,45 @@ __SYD.p3_tabs = () =>{
         },
         [
             __SYD.p3_tab(
-                {content:` Download a Solana-compatible wallet like Phantom or Solflare to hold your $ALITA tokens.` ,title:`AI-Powered Trade Automation` , img:"trade_auto.jpg"}
+                {content:` Download a Solana-compatible wallet like Phantom or Solflare to hold your $ALITA tokens.` ,title:`AI-Powered Trade Automation` , img:"trade_auto.jpg" , index:0}
             ),
             __SYD.p3_tab({
-                content:`Buy SOL on a centralized exchange (like Binance or Coinbase), then transfer it to your Solana wallet.`,title:`Telegram Bot Integration` , img:"bot_int.jpg"
+                content:`Buy SOL on a centralized exchange (like Binance or Coinbase), then transfer it to your Solana wallet.`,title:`Telegram Bot Integration` , img:"bot_int.jpg" , index:1
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Smart Market Insights` , img:"market_insight.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Smart Market Insights` , img:"market_insight.jpg" , index:2
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Custom Strategy Builder` , img:"strategy_builder.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Custom Strategy Builder` , img:"strategy_builder.jpg" , index:3
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Backtesting Engine` , img:"backtesting.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Backtesting Engine` , img:"backtesting.jpg" , index:4
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:` Multi-Exchange Support` , img:"multi_swap.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:` Multi-Exchange Support` , img:"multi_swap.jpg" , index:5
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`24/7 Autonomous Operation` , img:"autonomy.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`24/7 Autonomous Operation` , img:"autonomy.jpg" , index:6
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Risk Management Tools` , img:"risk_manage.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Risk Management Tools` , img:"risk_manage.jpg" , index:7
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Plug & Play Templates` , img:"plug_play.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Plug & Play Templates` , img:"plug_play.jpg" , index:8
             }),
             __SYD.p3_tab({
-                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Web + Mobile Access` , img:"web_mobile.jpg"
+                content:`Visit a supported DEX (like Jupiter or Raydium), connect your wallet, and swap SOL for $ALITA instantly.`,title:`Web + Mobile Access` , img:"web_mobile.jpg" , index:9
             })
         ]
     )
 }
 
 
-__SYD.p3_tab = ({title = '' , content = '' , img = "main"}) =>{
+__SYD.p3_tab = ({title = '' , content = '' , img = "main" , index = 0}) =>{
     return __c(
         'div',
         {
-            style:`width:calc(100% - 20px);max-width:${__p(["p3SubHeader" , "__flex_child"],"row") === "row" ? "280px" : "450px"};height:fit-content;border-radius:10px;padding:30px 0;cursor:pointer;`,
+            style:`width:calc(100% - 20px);max-width:${__p(["p3SubHeader" , "__flex_child"],"row") === "row" ? "280px" : "450px"};height:fit-content;border-radius:10px;padding:30px 0;cursor:pointer;position:relative;`,
             class:"buy_tabs"
         },
         [
@@ -198,13 +198,19 @@ __SYD.p3_tab = ({title = '' , content = '' , img = "main"}) =>{
                             __c(
                                 "div",
                                 {
-                                    style:`width:100%;height:100%;background-color:rgba(255,255,255,.2);background-image:url(./assets/${img});transition:all linear .3s;`,
+                                    style:`width:100%;height:100%;background-color:rgba(255 , 255 , 255 , .3);background-image:url(./assets/${img});transition:all linear .3s;`,
                                     class:`img_holder_${img.split(".").join("")}`
                                 },[],{genericStyle:["bg_cover"]}
                             ),
                         ]
                     )
                 ]
+            ),
+            __c(
+                "span",
+                {
+                    style:"height:15px;width:15px;position:absolute;bottom:10px;right:10px;background-image:url(./assets/tab_link.png);"
+                },[],{genericStyle:["bg_fit"]}
             )
         ],
         {
@@ -216,6 +222,14 @@ __SYD.p3_tab = ({title = '' , content = '' , img = "main"}) =>{
                 onmouseout:e =>{
                     const el = document.querySelector(`.img_holder_${img.split(".").join("")}`);
                     el.style.transform = "scale(1)";
+                },
+                onclick:e =>{
+                    const state = __g('main_pop_tab');
+                    state.display = true;
+                    state.type = index;
+                    __u("main_pop_tab" , {type:"a" , value:state});
+
+                    __p(["main_pop_tab" , "updateContent"],()=>{})();
                 }
             }
         }

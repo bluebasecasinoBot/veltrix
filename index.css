@@ -188,10 +188,10 @@ nav a{
 
 .clickButton:hover::after
 {
-    height: 200px;
-    width: 200px;
-    top: -30px;
-    left: -30px;
+    height: 300px;
+    width: 300px;
+    top: -50px;
+    left: -50px;
 }
 
 .clickButton:hover p
@@ -266,4 +266,40 @@ nav a{
 {
     background-color: lightgrey;
     color:#121829;
+}
+
+.main_pop_tab
+{
+    animation: popupTab 0.4s ease-in;
+    opacity: 1;
+}
+
+@keyframes popupTab {
+    0% {
+        height: 0;
+        width:0;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: bottom left;
+    }
+    30%
+    {
+        opacity: 1;
+    }
+    100% {
+        height: 100vh;
+        width:100vw;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+.opacity-on-off
+{
+    opacity: .4;
+    transition: all linear .3s;
+}
+.opacity-on-off:hover
+{
+    opacity: 1;
 }

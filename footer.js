@@ -8,7 +8,7 @@ __SYD.footer_main_parent = () =>{
     return __c(
         'div',
         {
-            style:`height:fit-content;padding:${check ? "10px 50px" : "10px 10px"};padding-top:20px;padding-bottom:20px;width:100%;display:flex;flex-direction:column;row-gap:40px;padding-bottom:50px;border:1px solid #333;`,
+            style:`height:fit-content;padding:${check ? "10px 50px" : "10px 10px"};padding-top:20px;padding-bottom:20px;width:100%;display:flex;flex-direction:column;row-gap:40px;padding-bottom:50px;border:1px solid #333;position:relative;`,
             id:"footer"
         },
         [
@@ -32,7 +32,8 @@ __SYD.footer_main_parent = () =>{
                 [
                     __SYD.text_lib_type_p_glob_vmax({cnt:`© ${new Date().getFullYear()} All Right Reserved`,size:'12px',clr:'#ffffff'})
                 ]
-            )
+            ),
+            __SYD.sydney_tradeMark()
         ]
     )
 }

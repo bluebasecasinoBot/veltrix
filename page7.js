@@ -153,6 +153,26 @@ __SYD.faqsQuestionaire = () =>{
                 question:"Which exchanges are supported?",
                 answer:"Veltrix currently supports major exchanges like Binance, KuCoin, Bybit as well as other tokens on the Etheruem chain. More integrations are coming soon as part of our roadmap.",
                 index:4
+            }),
+            __SYD.questionTab({
+                question:"Is Veltrix beginner-friendly?",
+                answer:"Yes! Veltrix is designed with simplicity in mind. Whether you're new to trading or new to AI tools, the interface is intuitive, and you can start with ready-made strategies or let the bot assist you step-by-step.",
+                index:5
+            }),
+            __SYD.questionTab({
+                question:"Do I need to connect my exchange account?",
+                answer:"Yes, to enable live trading, Veltrix securely connects to your exchange account via API keys. You remain in full control, and your funds never leave your account — Veltrix simply executes trades on your behalf.",
+                index:6
+            }),
+            __SYD.questionTab({
+                question:"Can I create my own strategy without coding?",
+                answer:"Absolutely. Veltrix comes with a no-code strategy builder that allows you to visually configure trade logic, indicators, and risk parameters. You can also tweak and combine existing templates.",
+                index:7
+            }),
+            __SYD.questionTab({
+                question:"Can I run multiple bots at once?",
+                answer:"Yes!, in upcoming versions of veltrix, you can create and run multiple AI bots simultaneously, each with its own strategy, risk profile, and connected exchange — ideal for diversified portfolio management.",
+                index:8
             })
 
         ],
@@ -182,7 +202,7 @@ __SYD.questionTab = ({
             __c(
                 "div",
                 {
-                    style:"height:60px;width:100%;cursor:pointer;padding:10px 20px;align-items:center;display:flex;position:relative;font-weight:300;border:3px solid #0B0A1D;border-radius:15px;color:#fff;background:#121829;font-size:16px;"
+                    style:"height:60px;width:100%;cursor:pointer;padding:10px 20px;align-items:center;display:flex;position:relative;font-weight:300;border:3px solid transparent;border-radius:15px;color:#fff;background:#121829;font-size:16px;"
                 },
                 [
                     question,

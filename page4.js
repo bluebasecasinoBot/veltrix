@@ -4,7 +4,7 @@ __SYD.p4 = () =>{
     return __c(
         "div",
         {
-            style:"background:transparent;height:fit-content;width:100%;min-height:fit-content;display:flex;justify-content:center;" + __sC['pages']({method:"add" , style:{padding:"30px"}}),
+            style:"background:transparent;height:fit-content;width:100%;min-height:fit-content;display:flex;justify-content:center;" + __sC['pages']({method:"add" , style:{padding:"30px 0px"}}),
             id:"p4"
         },
         [
