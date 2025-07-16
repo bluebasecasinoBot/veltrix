@@ -84,7 +84,7 @@ __SYD.mobileNav = () =>{
                         [
                             __SYD.desktopNav_textContent_text({val:"Home" , ref:"#p1" , clr:"#02819d"}),
                             __SYD.utils_dropDown(),
-                            __SYD.desktopNav_textContent_text({val:"Docs" , ref:"https://devbatsys-organization.gitbook.io/synthia/~/changes/1" , clr:"#02819d"}),
+                            // __SYD.desktopNav_textContent_text({val:"Docs" , ref:"https://devbatsys-organization.gitbook.io/synthia/~/changes/1" , clr:"#02819d"}),
                         ]
                     ),
                     // __SYD.desktopNav_textContent_text({val:"tokenomics" , ref:"p6"}),
@@ -119,7 +119,7 @@ __SYD.desktopNav_textContent = () =>{
         [
             __SYD.desktopNav_textContent_text({val:"Home" , ref:"#p1"}),
             __SYD.utils_dropDown(),
-            __SYD.desktopNav_textContent_text({val:"Docs" , ref:"https://devbatsys-organization.gitbook.io/synthia/~/changes/1"}),
+            // __SYD.desktopNav_textContent_text({val:"Docs" , ref:"https://devbatsys-organization.gitbook.io/synthia/~/changes/1"}),
             // __SYD.desktopNav_textContent_text({val:"tokenomics" , ref:"p6"}),
             // __SYD.desktopNav_textContent_text({val:"FAQ" , ref:"p7"}),
             // __SYD.desktopNav_textContent_text({val:"contact" , ref:"footer"}),
