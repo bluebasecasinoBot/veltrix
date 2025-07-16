@@ -107,7 +107,7 @@ __SYD.p7_text3 = () =>{
         "div",
         {},
         [
-            __c("p" , {style:`${SYD_VAR.pag1SubText.get()} text-align:center;color:#A0AAB8;`},["New to Alita AI? You’re not alone—and that’s exactly the point. We built this platform to welcome everyone, from Solana natives to total crypto rookies. Whether you’re curious about our tech, the token, or just how to start building your own AI, this section breaks it all down. No jargon, no fluff—just real answers for real rebels."])
+            __c("p" , {style:`${SYD_VAR.pag1SubText.get()} text-align:center;color:#A0AAB8;`},["Whether you're new to AI trading or just curious about how Veltrix works, this section covers everything you need to know — from setup and security to strategy and performance. Dive in and get clarity on how Veltrix can simplify and supercharge your trading journey."])
         ]
     )
 }
