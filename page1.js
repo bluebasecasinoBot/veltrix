@@ -81,7 +81,7 @@ __SYD.p1_subText = () =>{
         "div",
         {style:"width:100%;display:flex;justify-content:center;"},
         [
-            __c("p" , {style:SYD_VAR.pag1SubText.get() + "padding:10px;color: #A0AAB8 ;" , class:"target_div"},["Synthia is AI, decentralized. Powered by Ethereum, driven by intelligence."])
+            __c("p" , {style:SYD_VAR.pag1SubText.get() + "padding:10px;color: #A0AAB8 ;" , class:"target_div"},["Veltrix is your AI-powered trading assistant built for the next generation of investors. Automate strategies, receive real-time insights, and execute trades directly from Telegram — no code, no clutter, just intelligent action. Whether you're a beginner or a pro, Veltrix empowers you to trade with precision, speed, and confidence."])
         ]
     )
 }
