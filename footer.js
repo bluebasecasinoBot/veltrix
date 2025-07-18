@@ -62,7 +62,7 @@ __SYD.footer_main_child2 = () =>{
                                 {style:'display:flex;column-gap:10px;padding:5px;width:fit-content;align-items:center'},
                                 [
                                     __SYD.iconify_20px({attr:'fa-brands fa-x-twitter' , clr :'#00C2FF'}),//<i class="fa-solid fa-envelope-open-text"></i>
-                                    __c('a',{href:"https://x.com/synthiasyai"},[__SYD.text_lib_type_p_glob_vmax({cnt:'Twitter', size:'14px' , w:'500',clr:'#00C2FF'})]),
+                                    __c('a',{href:"https://x.com/veltrixai_erc20"},[__SYD.text_lib_type_p_glob_vmax({cnt:'Twitter', size:'14px' , w:'500',clr:'#00C2FF'})]),
                                 ]
                             ),
                 
@@ -71,7 +71,7 @@ __SYD.footer_main_child2 = () =>{
                                 {style:'display:flex;column-gap:10px;padding:5px;width:fit-content;align-items:center'},
                                 [
                                     __SYD.iconify_20px({attr:'fa-brands fa-telegram' , clr :'#00C2FF'}),//<i class="fa-solid fa-phone-volume"></i>
-                                    __c('a',{href:"https://t.me/synthAI_eth"},[__SYD.text_lib_type_p_glob_vmax({cnt:'Telegram', size:'14px' , w:'500',clr:'#00C2FF'})]),
+                                    __c('a',{href:"https://t.me/veltrixai_eth"},[__SYD.text_lib_type_p_glob_vmax({cnt:'Telegram', size:'14px' , w:'500',clr:'#00C2FF'})]),
                                 ]
                             ),
                 
